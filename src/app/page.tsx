@@ -21,7 +21,7 @@ export default function Home() {
         </div>
 
         {/* 卡片网格主要内容区域 */}
-        <div className="card-grid mb-12">
+        <div className="card-grid mb-8">
 
           {/* 界面预览卡片 - 主要卡片 */}
           <div className="card-item card-large">
@@ -213,16 +213,29 @@ gemini
         </div>
 
         {/* 底部链接 */}
-        <div className="text-center mt-16">
-          <div className="flex flex-wrap justify-center gap-8 mb-8">
-            <a href="https://x.com/interjc" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors duration-300 text-lg">
-              𝕏 @interjc
-            </a>
-            <a href="https://justincourse.com" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors duration-300 text-lg">
-              AI 编程课
-            </a>
+        <footer style={{ marginTop: '120px', marginBottom: '40px' }}>
+          <div className="text-center">
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-6">开始你的 AI 编程之旅</h3>
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '48px', marginBottom: '32px' }}>
+              <a
+                href="https://x.com/interjc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/80 hover:text-white transition-colors duration-300 text-lg"
+              >
+                𝕏 @interjc
+              </a>
+              <a
+                href="https://justincourse.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/80 hover:text-white transition-colors duration-300 text-lg"
+              >
+                AI 编程课
+              </a>
+            </div>
           </div>
-        </div>
+        </footer>
 
       </div>
     </main>

@@ -5,7 +5,7 @@
 body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 25s ease infinite;
 }
 
 @keyframes gradient {
@@ -119,4 +119,33 @@ body {
   .glass-card.large {
     min-height: 320px;
   }
+}
+
+/* Footer Styling */
+.footer-glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.footer-glass:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.footer-link {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.1);
 }
